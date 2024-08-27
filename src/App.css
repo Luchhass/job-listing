@@ -6,7 +6,7 @@ body {
   }
   
   .header {
-    background-image: url('./assets/images/headerBackground.png') #63BABA center center repeat-x;
+    background: url('../assets/images/headerBackground.png') #63BABA center center repeat-x;
     height: 156px;
   }
   
