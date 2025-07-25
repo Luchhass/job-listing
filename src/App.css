@@ -1,145 +1,147 @@
 body {
-    background-color: #EFFAFA;
-    font-family: "League Spartan", sans-serif;
-    font-optical-sizing: auto;
-    color: #2B3939;
-  }
-  
-  .header {
-    background: url('../assets/images/headerBackground.png') #63BABA center center repeat-x;
-    height: 156px;
-  }
-  
-  .jobs {
-    max-width: 1100px;
-    margin-inline: auto;
-    padding-block: 76px;
-    display: grid;
-    gap: 24px;
-  }
-  
-  .jobItem {
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 30px 40px;
-    border-radius: 5px;
-    box-shadow: 0px 15px 20px -5px #0D718226;
-  
-    & > * {
-      width: calc(50% - 20px);
-    }
-  
-    a {
-      color: #5CA5A5;
-    }
-  
-    h3 {
-      font-size: 22px;
-      line-height: 24px;
-      margin-bottom: 7px;
-    }
-  
-    h4 {
-      font-size: 18px;
-      line-height: normal;
-      margin-bottom: 12px;
-      span {
-        margin-left: 5px;
-      }
-    }
-  }
-  
-  .jobDetails a:has(img) {
-    float: left;
-    margin-right: 24px;
-  }
-  
-  .jobTags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-content: center;
-    gap: 16px;
-    a {
-      background-color: #5ca5a515;
-      border-radius: 4px;
-      font-weight: bold;
-      padding: 6px 12px;
-      font-size: 16px;
-      line-height: 24px;
-    }
-  }
-  
-  .new, .featured {
-    display: inline-block;
-    color: #fff;
-    text-transform: uppercase;
-    background-color: #5CA5A5;
-    font-size: 14px;
-    line-height: 14px;
-    border-radius: 12px;
-    padding: 8px 8px 4px;
-  }
-  
-  .featured {
-    background-color: #2B3939;
-  }
-  
-  .featuredJob {
-    border-left: 5px solid #5CA5A5;
-    padding-left: 35px;
+  background-color: #effafa;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  color: #2b3939;
+}
+
+.header {
+  background: url("/assets/images/headerBackground.png") #63baba center center
+    repeat-x;
+  height: 156px;
+}
+
+.jobs {
+  max-width: 1100px;
+  margin-inline: auto;
+  display: grid;
+  gap: 30px;
+  padding: 70px 30px 30px 30px;
+}
+
+.jobItem {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 30px 40px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px -5px #0d718226;
+
+  & > * {
+    width: calc(50% - 20px);
   }
 
-  .filter {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    box-shadow: 0px 15px 20px -5px #0d718226;
-    max-width: 1100px;
-    margin: 0 auto;
-    position: relative;
-    top: 115px;
-    padding: 20px;
-    background-color: #ffffff;
-  
-    .filterContent {
-      display: flex;
-      gap: 16px;
-    }
-  
-    .textFilter {
-      display: flex;
-  
-      button {
-        border: none;
-        background-color: #5ca5a5;
-        color: white;
-        padding: 9px;
-        cursor: pointer;
-        border-radius: 0px 6px 6px 0px;
-      }
-  
-      p {
-        border-radius: 6px 0px 0px 6px;
-        display: flex;
-        align-items: center;
-        background-color: #5ca5a510;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 24px;
-        letter-spacing: -0.1230769231915474px;
-        text-align: left;
-        color: #5ca5a5;
-        padding: 8px 11px;
-      }
-    }
-  }
-  
-  .fullDelete {
-    border: none;
-    background-color: transparent;
+  a {
     color: #5ca5a5;
-    cursor: pointer;
   }
+
+  h3 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 12px;
+    span {
+      margin-left: 5px;
+    }
+  }
+}
+
+.jobDetails a:has(img) {
+  float: left;
+  margin-right: 24px;
+}
+
+.jobTags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 16px;
+  a {
+    background-color: #5ca5a515;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.new,
+.featured {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #5ca5a5;
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 12px;
+  padding: 8px 8px 4px;
+}
+
+.featured {
+  background-color: #2b3939;
+}
+
+.featuredJob {
+  border-left: 5px solid #5ca5a5;
+  padding-left: 35px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: 0px 15px 20px -5px #0d718226;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  top: 115px;
+  padding: 20px;
+  background-color: #ffffff;
+
+  .filterContent {
+    display: flex;
+    gap: 16px;
+  }
+
+  .textFilter {
+    display: flex;
+
+    button {
+      border: none;
+      background-color: #5ca5a5;
+      color: white;
+      padding: 9px;
+      cursor: pointer;
+      border-radius: 0px 6px 6px 0px;
+    }
+
+    p {
+      border-radius: 6px 0px 0px 6px;
+      display: flex;
+      align-items: center;
+      background-color: #5ca5a510;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: -0.1230769231915474px;
+      text-align: left;
+      color: #5ca5a5;
+      padding: 8px 11px;
+    }
+  }
+}
+
+.fullDelete {
+  border: none;
+  background-color: transparent;
+  color: #5ca5a5;
+  cursor: pointer;
+}
